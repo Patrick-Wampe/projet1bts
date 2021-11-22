@@ -1,0 +1,10 @@
+{% extends 'instagramapp/base.html' %}
+
+{% block content %}
+<h1>Bienvenue sur InstaTech !</h1>
+<div>
+    {% for element in media %}
+        <img src="{{ element.url }}" width=50%>
+    {% endfor %}
+</div>
+{% endblock %}
